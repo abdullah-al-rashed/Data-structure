@@ -1,13 +1,17 @@
-int removeFront(node*&head){
-    if(head == nullptr){
-        return -1000;
+struct node {
+    int val = 0;
+    node* next = nullptr;
+};
+
+int removeFront (node *&n){
+    if(n == nullptr){
+        return -1;
     }
     else{
-        node* j = head;
-        
+        node* j = n;
         
         int x = j->val;
-        head = head->next;
+        n = n->next;
         delete j;
         
         return x;
