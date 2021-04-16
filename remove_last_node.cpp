@@ -1,3 +1,9 @@
+struct node {
+int val = 0;
+node* next = nullptr;
+};
+
+//function
 int removeBack(node *&n){
     if(n == nullptr){
         return -1000;
