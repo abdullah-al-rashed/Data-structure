@@ -27,7 +27,6 @@ void addValue(node *&n, int value){
 
 void printList(node *n){
     while(n!=nullptr){
-        cout<<n<<" ";
         cout<<n->val<<endl;
         n = n->next;
     }
